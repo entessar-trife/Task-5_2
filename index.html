@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font -->
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font-awesome -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/style.css">
+  <!-- css -->
+</head>
+
+<body>
+  <div class="container">
+    <h1> Units Converter </h1>
+    <div class="box">
+      <div class="distance-area">
+        <label for="distance"> Enter Distance: </label>
+        <input id="distance" type="number" required>
+      </div>
+      <div class="units">
+        <div class="unit-select">
+          <label for="from"> From: </label>
+          <select name="from" id="from">
+            <option value="km"> km </option>
+            <option value="hm"> hm </option>
+            <option value="dam"> dam </option>
+            <option value="dm"> dm </option>
+            <option value="m"> m </option>
+            <option value="cm"> cm </option>
+            <option value="mm"> mm </option>
+          </select>
+        </div>
+        <div class="unit-select">
+          <label for="to"> To: </label>
+          <select name="to" id="to">
+            <option value="km"> km </option>
+            <option value="hm"> hm </option>
+            <option value="dam"> dam </option>
+            <option value="dm"> dm </option>
+            <option value="m"> m </option>
+            <option value="cm"> cm </option>
+            <option value="mm"> mm </option>
+          </select>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="convert-btn">
+          Convert
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+        <button class="reset-btn">
+          Reset
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+      </div>
+      <div class="result-area">
+        <label> Result: </label>
+        <span class="result"></span>
+      </div>
+    </div>
+  </div>
+  <!-- javascript -->
+  <script src="./assets/main.js"></script>
+  <!-- javascript -->
+</body>
+
+</html>
